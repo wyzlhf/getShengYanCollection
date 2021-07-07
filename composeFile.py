@@ -20,13 +20,13 @@ for file_name in files_name_list:
     if encoding=='utf-8':
         with open(path+'/'+file_name,'r',encoding='utf8') as f_read:
             article=f_read.read()+'\n'
-            with open('圣严法师文集new.txt','a',encoding='utf8') as f_write:
+            with open('圣严法师文集new1.txt','a',encoding='utf8') as f_write:
                 f_write.write('○○○'+file_name.split('.')[0]+'\n\n\n')
                 f_write.write(article)
     elif encoding == 'ANSI':
         with open(path + '/' + file_name, 'r', encoding='ANSI') as f_read:
             article = f_read.read()+'\n'
-            with open('圣严法师文集new.txt', 'a',encoding='ANSI') as f_write:
+            with open('圣严法师文集new1.txt', 'a',encoding='ANSI') as f_write:
                 f_write.write('○○○' + file_name.split('.')[0]+'\n\n\n')
                 f_write.write(article)
     # elif encoding == 'UTF-16':
@@ -59,3 +59,9 @@ for file_name in files_name_list:
     #     with open(path + '/' + file_name, 'r', encoding='UNICODE') as f_read:
     #         article = f_read.read()
     #         print(article)
+    else:
+        with open(path+'/'+file_name,'r',encoding='utf8') as f_read:
+            article=f_read.read()+'\n'
+            with open('圣严法师文集new1.txt','a',encoding='utf8') as f_write:
+                f_write.write('○○○'+file_name.split('.')[0]+'\n\n\n')
+                f_write.write(article)
